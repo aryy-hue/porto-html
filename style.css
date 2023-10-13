@@ -1,34 +1,126 @@
-.nav{
-    padding: 48px 73px;
-    width: 1297px;
-    height: 59px;
-    flex-shrink: 0;
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    background-color: #FFFDFD;
 }
-a {
-    color: inherit;
-    text-decoration: underline rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
+.header{
+    position: fixed;
+    top:0 ;
+    left:0 ;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    text-decoration: none;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
 }
 
-a:hover{
-    text-decoration:underline;
+section{
+    margin: 100px ;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    /* background-color: red; */
 }
+
 .cont-1{
     position: absolute;
-    left:318px;
-    top:390px ;
+    justify-content: ;
+    left:275px;
+    top:300px ;
+    display: flex;
+    color: var(--main, #1E1E1E);
+    font-size: 96px;
+    font-weight: 800;
+    margin: 0px 10px;
+   
+}
+.cont-2{
+    position: absolute;
+    left: 650px;
+    top:400px ;
     color: var(--main, #1E1E1E);
     font-family: Lato;
     font-size: 96px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    background-color: transparent;
 }
 .rect-1{
+    display: flex;
+    width: 540px;
+    justify-content: space-between;
     position: absolute;
-    left: 569px;
-    top:406px;
-    width: 550px;
+    left: 550px;
+    top:300px;
+}
+.rect-2{
+    position:absolute;
+    left: 250px;
+    top: 410px;
+    bottom: 402px;
+    width: 341px;
     height: 100px;
     flex-shrink: 0;
 }
+
+
+.rect-1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from{
+    margin-left: 100%;
+    width: 40%;
+    }
+} to {
+    margin-left: 0%;
+    width: 100%;
+}
+.rect-2{
+    animation-duration: 3s;
+    animation-name: slidein1;
+}
+@keyframes slidein1 {
+    from{
+    margin-left: 0%;
+    width: 0%;
+    }
+} to {
+    margin-right: 100%;
+    width: 100%;
+} 
