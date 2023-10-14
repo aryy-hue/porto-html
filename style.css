@@ -126,7 +126,6 @@ section{
 } 
 
 .container {
-    /* background-color: red; */
     display:block;
     padding: 100px 100px;
     top:800px;
