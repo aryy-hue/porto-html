@@ -59,7 +59,7 @@ section{
     position: absolute;
     justify-content: ;
     left:275px;
-    top:300px ;
+    top:250px ;
     display: flex;
     color: var(--main, #1E1E1E);
     font-size: 96px;
@@ -70,7 +70,7 @@ section{
 .cont-2{
     position: absolute;
     left: 650px;
-    top:400px ;
+    top:350px ;
     color: var(--main, #1E1E1E);
     font-family: Lato;
     font-size: 96px;
@@ -85,12 +85,12 @@ section{
     justify-content: space-between;
     position: absolute;
     left: 550px;
-    top:300px;
+    top:250px;
 }
 .rect-2{
     position:absolute;
     left: 250px;
-    top: 410px;
+    top: 360px;
     bottom: 402px;
     width: 341px;
     height: 100px;
@@ -190,4 +190,25 @@ section{
     position: absolute;
     top: 600px;
     left: 1000px;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 10px;
+    text-decoration: none;
+    color: #1E1E1E;
+}
+.card {
+    margin-left: 20px;
+    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content {
+    padding: 20px 16px; */
 }
