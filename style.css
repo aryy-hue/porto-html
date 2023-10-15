@@ -7,6 +7,9 @@ html{
     box-sizing: border-box;
     font-family: Lato;
 }
+body{
+    background-color: #FFFDFD;
+}
 .header{
     background-color: #FFFDFD;
     position: fixed;
@@ -224,6 +227,7 @@ section{
     transition: 0.3s;
     width: 40%;
     height: 20%;
+    background-color: #fff;
 }
 .card:hover {
     border-radius: 10px;
